@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marinelle Lumière · Velas artesanales · Toluca</title>
+<meta name="description" content="Velas artesanales de cera de soya hechas a mano en Toluca. Aroma • luz • intención.">
+<link rel="canonical" href="https://marinellelumiere.localclick.com.mx/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
+<style>
+:root{--bg:#f6f0e6;--card:#fffaf2;--ink:#3b2f27;--mut:#7a6a5c;--sage:#8fb3a1;--gold:#b08a4e;--mar:#e8892b;--line:#e4d8c6}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:300 17px/1.65 Jost,system-ui,sans-serif}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.15}
+img{max-width:100%;display:block}
+a{color:inherit}
+.w{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:9;background:rgba(246,240,230,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.14em;text-decoration:none}
+.logo small{display:block;font:300 .6rem Jost,sans-serif;letter-spacing:.5em;color:var(--gold)}
+nav a{margin-left:18px;text-decoration:none;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase}
+nav a:hover{color:var(--gold)}
+.hero{position:relative;color:#fff;text-align:center;background:#2a1d14 url(IMG-20261025-WA0026.jpg) center/cover}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(30,18,10,.55),rgba(30,18,10,.7))}
+.hero .w{position:relative;padding-top:110px;padding-bottom:110px}
+.tag{display:inline-block;background:var(--mar);padding:4px 16px;border-radius:99px;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);margin:18px 0 10px}
+.hero p{max-width:560px;margin:0 auto 26px;font-size:1.1rem}
+.btn{display:inline-block;background:var(--gold);color:#fff;padding:12px 28px;border-radius:99px;text-decoration:none;border:0;font:400 .9rem Jost,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.btn:hover{background:#8f6e38}
+.btn.o{background:none;border:1px solid #fff;margin-left:8px}
+.slogan{text-align:center;padding:34px 20px;font:italic 1.7rem 'Cormorant Garamond',serif;color:var(--gold);letter-spacing:.12em}
+section{padding:60px 0}
+section h2{font-size:2.3rem;text-align:center;margin-bottom:8px}
+.sub{text-align:center;color:var(--mut);margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card img,.ph{aspect-ratio:1;width:100%;object-fit:cover}
+.ph{display:grid;place-items:center;background:repeating-linear-gradient(45deg,#efe6d7,#efe6d7 10px,#f6f0e6 10px,#f6f0e6 20px);color:var(--mut);font-style:italic}
+.card div{padding:16px 18px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:1.35rem}
+.card p{font-size:.9rem;color:var(--mut);flex:1}
+.pr{font:600 1.3rem 'Cormorant Garamond',serif;color:var(--gold)}
+select{width:100%;padding:8px;border:1px solid var(--line);border-radius:8px;background:#fff;font:inherit;font-size:.9rem;color:var(--ink)}
+.card .btn{text-align:center;padding:10px;font-size:.8rem}
+.col{margin:46px 0 18px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.col h3{font-size:1.7rem}
+.col span{font-size:.9rem;color:var(--mut)}
+.alt{background:#efe6d7}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.two img{border-radius:14px}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:14px 18px}
+summary{cursor:pointer;font-weight:500}
+details p{margin-top:10px;color:var(--mut)}
+mark{background:#ffe9a8;padding:0 4px}
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;text-align:center}
+.ct a{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;text-decoration:none}
+.ct b{display:block;font:600 1.2rem 'Cormorant Garamond',serif;margin-bottom:4px}
+footer{text-align:center;padding:30px 20px;border-top:1px solid var(--line);color:var(--mut);font-size:.85rem}
+.firma{margin-top:10px;font-size:.78rem;letter-spacing:.08em}
+.firma a{color:var(--gold);text-decoration:none;font-weight:500}
+.firma a:hover{text-decoration:underline}
+@media(max-width:700px){.two{grid-template-columns:1fr}nav a{margin:0 10px 0 0;font-size:.75rem}.btn.o{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<header><div class="w">
+<a class="logo" href="#inicio">MARINELLE<small>LUMIÈRE</small></a>
+<nav><a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a></nav>
+</div></header>
+
+<main>
+<div class="hero" id="inicio"><div class="w">
+<span class="tag">Colección especial · Día de Muertos</span>
+<h1>Calaveras y Cempasúchil</h1>
+<p>Iluminamos tus momentos. Velas artesanales para acompañar tu día a día.</p>
+<a class="btn" href="#tradicion">Ver colección</a><a class="btn o" href="#catalogo">Todo el catálogo</a>
+</div></div>
+<div class="slogan">Aroma • luz • intención</div>
+
+<section style="padding-top:20px"><div class="w">
+<h2>Nuestras favoritas</h2><p class="sub">Las velas más vendidas</p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,420px));justify-content:center">
+<a class="card" href="#relajacion" style="text-decoration:none"><img src="IMG-20261025-WA0030.jpg" alt="Vela Loto Zen" loading="lazy"><div><h3>Loto Zen</h3><p>Relajación · Paz · Equilibrio</p></div></a>
+<a class="card" href="#relajacion" style="text-decoration:none"><img src="IMG-20261025-WA0027.jpg" alt="Vela Armonía" loading="lazy"><div><h3>Armonía</h3><p>Armonía · Paz · Equilibrio</p></div></a>
+</div></div></section>
+
+<section id="catalogo" class="alt"><div class="w">
+<h2>Catálogo</h2><p class="sub">Elige tu vela y tu empaque. Pedimos por WhatsApp.</p>
+
+<div class="col" id="relajacion"><h3>Relajación y Spa</h3><span>Loto Zen y Armonía · Esencia de Bambú y Spa</span></div>
+<div class="grid">
+<div class="card" data-n="Plato Buda y Flores"><img src="IMG-20261025-WA0029.jpg" alt="Plato con Buda y flores" loading="lazy"><div><h3>Plato Buda y Flores</h3><p>100% cera de soya de quemado limpio, envase de cerámica grueso y doble pabilo de algodón.</p><span class="pr">$500 MXN</span></div></div>
+<div class="card" data-n="Vaso con Buda en flor"><img src="IMG-20261025-WA0032.jpg" alt="Vaso con Buda en flor de loto" loading="lazy"><div><h3>Vaso con Buda en flor</h3><p>100% cera de soya de quemado limpio, envase de vidrio grueso, tapa de bambú y doble pabilo de algodón.</p><span class="pr">$250 MXN</span></div></div>
+<div class="card" data-n="Vaso clásico (Loto Zen / Armonía)"><img src="IMG-20261025-WA0030.jpg" alt="Vaso clásico Loto Zen" loading="lazy"><div><h3>Vaso clásico</h3><p>Sin figura, solo aroma. 100% cera de soya de quemado limpio, vidrio grueso, tapa de bambú y doble pabilo de algodón.</p><span class="pr">$300 MXN</span></div></div>
+</div>
+
+<div class="col"><h3>Aromas Cálidos</h3><span>Aroma a Café</span></div>
+<div class="grid">
+<div class="card" data-n="Bouquet de 16 flores (Café)"><img src="IMG-20261025-WA0028.jpg" alt="Bouquet de velas en forma de flor" loading="lazy"><div><h3>Bouquet con 16 flores</h3><p>100% cera de soya de quemado limpio, en caja de regalo con tapa para ramos.</p><span class="pr">$500 MXN</span></div></div>
+</div>
+
+<div class="col"><h3>Aromas Florales y Frutales</h3><span>Jardines de California y Mandarina</span></div>
+<div class="grid">
+<div class="card" data-n="Bouquet floral en caja de regalo"><div class="ph">Foto próximamente</div><div><h3>Bouquet floral</h3><p>100% cera de soya de quemado limpio, en caja de regalo con tapa para ramos.</p><span class="pr">$500 MXN</span></div></div>
+<div class="card" data-n="Vaso clásico (Jardines de California / Mandarina)"><div class="ph">Foto próximamente</div><div><h3>Vaso clásico</h3><p>Sin figura, solo aroma. 100% cera de soya de quemado limpio, vidrio grueso, tapa de bambú y doble pabilo de algodón.</p><span class="pr">$300 MXN</span></div></div>
+</div>
+
+<div class="col" id="tradicion"><h3>Tradición · Temporada</h3><span>Velas esculturales de parafina Malasia, con pabilo de algodón</span></div>
+<div class="grid">
+<div class="card" data-n="Flor de Cempasúchil"><img src="IMG-20261025-WA0031.jpg" alt="Vela escultural flor de cempasúchil" loading="lazy"><div><h3>Flor de Cempasúchil</h3><p>Parafina Malasia para máxima definición de relieves tridimensionales y pabilo de algodón para un quemado estructurado.</p><span class="pr">$40 MXN</span></div></div>
+<div class="card" data-n="Escultural Calavera"><img src="IMG-20261025-WA0026.jpg" alt="Velas escultural calavera" loading="lazy"><div><h3>Escultural Calavera</h3><p>Parafina Malasia para máxima definición de relieves tridimensionales y pabilo de algodón para un quemado estructurado.</p><span class="pr">$65 MXN</span></div></div>
+</div>
+</div></section>
+
+<section id="nosotros"><div class="w two">
+<img src="IMG-20261025-WA0030.jpg" alt="Vela Loto Zen encendida" loading="lazy">
+<div><h2 style="text-align:left">Nuestra historia</h2>
+<p>En Marinelle Lumière creemos que una vela es mucho más que cera y pabilo; es una experiencia que transforma cualquier espacio. Nuestro objetivo es llevar a tu hogar piezas decorativas y aromas que te inviten a pausar, respirar y disfrutar del momento.</p>
+<h3 style="margin:18px 0 4px">Elaboración artesanal</h3>
+<p>Cada vela es vertida a mano, cuidando meticulosamente detalles técnicos como la temperatura exacta, la formulación de nuestras ceras y la selección del pabilo ideal para cada diseño, garantizando siempre un quemado limpio y uniforme en todas nuestras piezas.</p>
+<p style="margin-top:12px;color:var(--gold)">Hechas a mano en Toluca, Edo. Méx.</p></div>
+</div></section>
+
+<section id="faq" class="alt"><div class="w" style="max-width:780px">
+<h2>Preguntas frecuentes</h2><p class="sub">&nbsp;</p>
+<details><summary>¿Cómo cuidar mi vela y recortar el pabilo?</summary><p>Para un quemado óptimo y sin humo, recorta el pabilo a unos 5 mm antes de cada uso. En el primer encendido, deja que la vela arda hasta que la cera derretida alcance todos los bordes del envase; esto evitará que se forme un hueco o "túnel" en el centro.</p></details>
+<details><summary>¿Cuáles son los tiempos de elaboración y envío?</summary><p>Al ser un producto artesanal hecho a mano, nuestro tiempo de elaboración es de <mark>[Agregar días]</mark> días hábiles. Una vez despachado, el tiempo de entrega dependerá de tu ubicación.</p></details>
+<details><summary>¿Cuál es la política de cambios o reembolsos?</summary><p>Cuidamos cada detalle del empaque para que tus velas lleguen impecables. Si tu pedido sufre algún daño durante el trayecto, contáctanos por WhatsApp dentro de las primeras 48 horas con fotografías del producto y con gusto te daremos una solución rápida.</p></details>
+<details><summary>¿Cuál es la diferencia entre la cera de soya y la parafina Malasia?</summary><p>Utilizamos 100% cera de soya natural para nuestras velas en envase (vasos, platos y frascos) porque ofrece un quemado limpio, dura más tiempo y distribuye excelente el aroma. Para nuestras velas esculturales (como calaveras y cempasúchil), utilizamos parafina Malasia de alta calidad, ya que su firmeza nos permite lograr acabados lisos y mantener perfectos los relieves tridimensionales.</p></details>
+</div></section>
+
+<section id="contacto"><div class="w">
+<h2>Contacto</h2><p class="sub">Toluca, Estado de México</p>
+<div class="ct">
+<a href="https://wa.me/525612689996" target="_blank" rel="noopener"><b>WhatsApp</b>56 1268 9996</a>
+<a href="https://instagram.com/marinellelumiere" target="_blank" rel="noopener"><b>Instagram</b>@marinellelumiere</a>
+<a href="mailto:hola@marinellelumiere.com"><b>Email</b>hola@marinellelumiere.com</a>
+</div></div></section>
+</main>
+
+<footer>© <span id="y">2026</span> Marinelle Lumière · Hechas a mano en Toluca, Edo. Méx. · Aroma • luz • intención<div class="firma">Sitio web diseñado y desarrollado por <a href="https://localclick.com.mx" target="_blank" rel="noopener">Nexus Local Click</a></div></footer>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+document.querySelectorAll('.card[data-n]').forEach(function(c){
+  var box=c.querySelector('div:last-child');
+  box.insertAdjacentHTML('beforeend','<select aria-label="Empaque"><option>Empaque estándar</option><option>Lista para regalo</option></select><a class="btn" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>');
+  var s=box.querySelector('select'),a=box.querySelector('.btn');
+  function u(){a.href='https://wa.me/525612689996?text='+encodeURIComponent('Hola, me interesa: '+c.dataset.n+' ('+s.value+')')}
+  s.onchange=u;u();
+});
+</script>
+</body>
+</html>
