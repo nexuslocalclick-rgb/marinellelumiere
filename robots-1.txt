@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marinellelumiere.localclick.com.mx/sitemap.xml
